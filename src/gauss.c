@@ -8,7 +8,7 @@ int eliminate(Matrix *mat, Matrix *b){
     int n = mat->r; // Pobieranie rozmiaru macierzy
 
     for (int k = 0; k < n - 1; k++) {
-        //  Wybor elementu glownego (pivoting)
+        //  Implementacja wybor elementu glownego - wersja kuba
         
         int max = k;
         for (int i = k + 1; i < n; i++) {
