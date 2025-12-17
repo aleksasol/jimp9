@@ -8,7 +8,11 @@ int eliminate(Matrix *mat, Matrix *b){
     int n = mat->r; // Pobieranie rozmiaru macierzy
 
     for (int k = 0; k < n - 1; k++) {
+
         //  Implementacja pivoting - Ola
+
+        
+
         
         int max = k;
         for (int i = k + 1; i < n; i++) {
