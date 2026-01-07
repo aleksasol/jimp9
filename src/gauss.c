@@ -22,7 +22,7 @@ int eliminate(Matrix *mat, Matrix *b){
         }
 
         // Sprawdzenie czy macierz nie jest osobliwa
-        if (fabs(mat->data[max][k]) < 1e-8) {
+        if (fabs(mat->data[max][k]) < 1e-15) {
             return 1;
         }
 
